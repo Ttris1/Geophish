@@ -1,4 +1,4 @@
-
+merge.md
 # Geophish
 Geolocate any device with a link
 # How to use
